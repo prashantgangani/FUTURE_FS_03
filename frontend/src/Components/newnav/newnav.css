@@ -1,0 +1,39 @@
+.new_nav{
+    width: 100%;
+    min-height: 40px;
+    background-color: #232f3e;
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 1; /* Lower z-index to place new nav behind search suggestions */
+}
+
+body {
+    padding-top: 100px; /* 60px header + 40px navbar */
+}
+
+.new_nav .nav_data{
+    display: flex;
+    justify-content:space-between;
+}
+
+.new_nav .nav_data .left_data{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.new_nav .nav_data .left_data a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.new_nav .nav_data .left_data a:hover {
+    color: #ff9900;
+}
